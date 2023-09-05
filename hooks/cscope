@@ -11,4 +11,8 @@ find . -name '*.py' \
 # -q: create inverted index
 if [ -f cscope.files ]; then
 	cscope -b -q
+	mv cscope.files .cscope.files
+	mv cscope.out .cscope.out
+	mv cscope.in.out .cscope.in.out
+	mv cscope.po.out .cscope.po.out
 fi
